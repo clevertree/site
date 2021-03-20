@@ -1,0 +1,77 @@
+.profile-picture {
+  float: left;
+  max-height: 170px;
+  padding: 0 1em 0 0;
+}
+
+.contact-info {
+  padding-top: 0.6em;
+  display: flex;
+  align-content: center;
+}
+
+.contact-info > svg {
+  padding-right: 8px;
+}
+
+
+
+
+
+.experience {
+  /*color: white;*/
+  margin-bottom: 0.5em;
+  /*background-color: #282c34;*/
+  background-color: #C2FCF7;
+  padding: 1em;
+  border-radius: 4px;
+}
+.experience a {
+  color: cadetblue;
+}
+
+
+.experience > .duration {
+  font-size: small;
+  color: #040F0F;
+  font-weight: bold;
+}
+
+
+.experience > .school,
+.experience > .company {
+  margin: 2px 0;
+}
+
+.experience > .location {
+  float: right;
+  font-size: small;
+  color: #040F0F;
+  font-weight: bold;
+}
+
+.experience > .degree,
+.experience > .position {
+  font-size: small;
+  color: darkred;
+  font-weight: bold;
+}
+
+.experience > .contact {
+  font-size: small;
+  color: #57737A;
+  font-weight: bold;
+
+  display: flex;
+  align-content: center;
+}
+
+.experience > .contact svg {
+  padding-right: 8px;
+}
+
+.experience > .description {
+  text-align: justify;
+  padding: 0.5em;
+}
+

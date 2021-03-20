@@ -1,0 +1,111 @@
+/** Theme **/
+
+body {
+  background-color: #85BDBF;
+  margin: 0;
+}
+
+
+
+.theme {
+  font-family: sans-serif;
+}
+
+.theme a {
+  text-decoration: none;
+}
+
+
+.theme > header {
+  width: 100%;
+  background-color: #282c34;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme > header img {
+  max-width: 100%;
+}
+
+@media print {
+  .theme > header {
+    /*display: none;*/
+  }
+}
+
+/** Content **/
+
+
+
+.theme > div.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.theme > div.content > div.page-name {
+
+}
+
+
+
+.theme > div.content > section {
+  /*padding: 1em;*/
+}
+
+/** Content Columns **/
+
+.theme > div.content.columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 100vh;
+}
+
+.theme > div.content.columns > section {
+  max-width: 580px;
+  padding: 10px;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .theme > div.content.columns {
+    display: block;
+  }
+
+  .theme > div.content.columns > section {
+    max-width: 100%;
+  }
+}
+
+
+.theme > div.content.columns > section.break {
+  /*flex-basis: 100%;*/
+}
+
+/** Footer **/
+
+.theme > footer {
+  color: white;
+  padding: 1em;
+  background-color: #282c34;
+  clear: both;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme > footer a {
+  color: #70adc1;
+}
+
+
+@media print {
+  .theme > footer {
+    display: none;
+  }
+}
