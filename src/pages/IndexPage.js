@@ -80,7 +80,7 @@ class IndexPage extends PageTemplate {
           <h2>Stack</h2>
           <p>
             NodeJS (Server) + React* (Client),
-            LAMP (or nginx),
+            LAMP (or nginx)
           </p>
 
           <h2>Media</h2>
@@ -129,7 +129,7 @@ class IndexPage extends PageTemplate {
           <div className="degree">B.S. in Computer Science</div>
           <p className="description">
             I taught martial arts at the Rec Center for over 3 years.
-            Not the best school for learning programming.
+            Not the best school for learning programming or anything serious.
           </p>
         </div>
 
