@@ -3,6 +3,7 @@
 body {
   background-color: #85BDBF;
   margin: 0;
+  -webkit-print-color-adjust: exact !important;
 }
 
 
@@ -31,6 +32,11 @@ body {
 }
 
 @media print {
+
+  body {
+    font-size: smaller; /* changing to 10pt has no impact */
+  }
+
   .theme > header {
     /*display: none;*/
   }
@@ -41,7 +47,7 @@ body {
 
 
 .theme > div.content {
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: auto;
 }
 
@@ -60,33 +66,44 @@ body {
 
 .theme > div.content.columns {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  max-height: 150vh;
-  max-width: 1200px;
+  /*max-height: 100vh;*/
+  max-width: 1600px;
 
 }
+.theme > div.content.columns div.section-container {
+  display: inline;
+}
 
-.theme > div.content.columns > section {
-  max-width: 580px;
-  padding: 10px;
+.theme > div.content.columns > * {
+  max-width: 48%;
+  padding: 1%;
   margin: 0;
+  flex: 1 1 48%;
+  flex-basis: 40%;
+  align-items: center;
+}
+
+.theme .print-break {
+  /*clear: both;*/
+  /*height: 180px;*/
+  page-break-after: avoid;
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .theme > div.content.columns {
     display: block;
     max-height: inherit;
   }
 
-  .theme > div.content.columns > section {
+  .theme > div.content.columns > * {
     max-width: 100%;
   }
 }
 
 
-.theme > div.content.columns > section.break {
+.theme > div.content.columns  section.break {
   /*flex-basis: 100%;*/
 }
 
@@ -110,6 +127,6 @@ body {
 
 @media print {
   .theme > footer {
-    display: none;
+    /*display: none;*/
   }
 }

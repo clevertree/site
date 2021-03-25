@@ -20,7 +20,7 @@ class IndexPage extends PageTemplate {
     return <div className="content columns">
 
 
-      <section className="break">
+      <section>
         <h1>Ari Asulin - Software Engineer</h1>
         <div className="experience">
           <img src={ProfilePicture} className="profile-picture"/>
@@ -60,145 +60,6 @@ class IndexPage extends PageTemplate {
       </section>
 
       <section>
-        <h1>Skills and Technologies</h1>
-        <div className="experience skills">
-          <h2>Programming</h2>
-          <p>
-            React Native,
-            ReactJS,
-            HTML5,
-            CSS3,
-            SQL,
-            Android Development,
-            iOS Development,
-            Javascript & jQuery,
-            PHP,
-            C#,
-            .NET,
-            Continuous Integration,
-            Encryption,
-            Application Programming Interfaces,
-            REST & GraphQL
-          </p>
-
-          <h2>Stack</h2>
-          <p>
-            NodeJS (Server) + React* (Client),
-            LAMP (or nginx)
-          </p>
-
-          <h2>Media</h2>
-          <p>
-            Video Editing,
-            Image Creation,
-            Music Production,
-            HTML & CSS Content
-          </p>
-
-          <h2>Administration</h2>
-          <p>
-            Linux System Administration,
-            Nginx,
-            Apache,
-            SSL Certificates
-            Debian
-          </p>
-
-          <h2>Tools</h2>
-          <p>
-            git,
-            ssh,
-            bash,
-            PHPStorm,
-            Visual Studio,
-            Gimp,
-            Kdenlive,
-            ObsStudio
-          </p>
-
-          <h2>Other</h2>
-          <p>
-            Juggling, Martial Arts, Historic Investigation
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <h1>Projects</h1>
-
-        <div className="experience project">
-          <a className="logo" href="https://audiosource.io" target="_blank">
-            <img src={ASLogo} alt="Audio Source Logo" />
-          </a>
-          <div className="duration">2018 - 2021</div>
-          <h2 className="name">
-            <a className="logo" href="https://audiosource.io" target="_blank">
-              Audio Source Composer
-            </a>
-          </h2>
-          <div className="subname">Web-based Digital Audio Workstation</div>
-          <p className="description">
-            The Audio Source Composer is an Open-Source Digital Audio Workstation (DAW) built on the WebAudio API written in NodeJS with ReactJS for browsers and ReactNative for mobile.
-            The main goal of the AudioSource Project is to provide an easy <strong>all-platform music composer</strong> pre-loaded with as many free sample libraries we can compile,
-            allowing aficionados of all music to not only listen, but explore the 'source' of the music they love, and hopefully be inspired to write music of their own.
-          </p>
-          <a className="source-link" href="https://github.com/clevertree/audio-source-composer" target="_blank">
-            <AiFillGithub alt="Github.com" />
-          </a>
-        </div>
-
-        <div className="experience project">
-          <a className="logo" href="https://paradigmthreat.net/history/timeline" target="_blank">
-            <img src={PTLogo} alt="Paradigm Threat Logo" />
-          </a>
-          <div className="duration">2019 - 2021</div>
-          <h2 className="name">
-            <a className="logo" href="https://audiosource.io" target="_blank">
-              Alternate Cosmology Timeline
-            </a>
-          </h2>
-          <div className="subname">Investigation Repository Website</div>
-          <p className="description">
-            The objective of this timeline is to compile an alternate history of Earth based on <em>ancient testimony</em> as an accessible sequence of events from the first memory to modern day.
-            I'm hoping this project helps others navigate the dissonance of consensus, and be able to visualize the creation of our world and solar system.
-            My investigation repository has survived numerous
-            <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank"> DDoS attacks </a>
-            and hacking attempts by being written in ReactJS and having no database ;)
-          </p>
-          <a className="source-link" href="https://github.com/clevertree/paradigm-threat" target="_blank">
-            <AiFillGithub alt="Github.com" />
-          </a>
-        </div>
-
-
-        <div className="experience project">
-          <a className="logo" href="https://ffga.me" target="_blank">
-            <img src={FFLogo} alt="Forgotten Future Logo" />
-          </a>
-          <div className="duration">2008 - 2021</div>
-          <h2 className="name">
-            <a className="logo" href="https://ffga.me" target="_blank">
-              Forgotten Future
-            </a>
-          </h2>
-          <div className="subname">WebGL based video game</div>
-          <p className="description">
-            Forgotten Future is a web-based video game project still in the planning stages.
-            This open-source parallax scrolling game will be available on all platforms.
-            Right now the website features a <a href="https://ffga.me/demo.html" target="_blank">webGL demo</a> as well as
-            <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" target="_blank"> music </a>
-            composed by Ari Asulin.
-            The next phase of this project will involve finding a cross-platform GL solution
-            allowing video games to be written <em>once</em> and be playable <em>anywhere</em>.
-          </p>
-          <a className="source-link" href="https://github.com/clevertree/forgotten-future" target="_blank">
-            <AiFillGithub alt="Github.com" />
-          </a>
-        </div>
-
-      </section>
-
-      <section>
         <h1>Education</h1>
 
         <div className="experience education">
@@ -222,6 +83,150 @@ class IndexPage extends PageTemplate {
           </p>
         </div>
       </section>
+
+      <div className="section-container">
+
+        <section>
+          <h1>Skills and Technologies</h1>
+          <div className="experience skills">
+            <h2>Programming</h2>
+            <p>
+              React Native,
+              ReactJS,
+              HTML5,
+              CSS3,
+              SQL,
+              Android Development,
+              iOS Development,
+              Javascript & jQuery,
+              PHP,
+              C#,
+              .NET,
+              Continuous Integration,
+              Encryption,
+              Application Programming Interfaces,
+              REST & GraphQL
+            </p>
+
+            <h2>Stack</h2>
+            <p>
+              NodeJS (Server) + React* (Client),
+              LAMP (or nginx)
+            </p>
+
+            <h2>Media</h2>
+            <p>
+              Video Editing,
+              Image Creation,
+              Music Production,
+              HTML & CSS Content
+            </p>
+
+            <h2>Administration</h2>
+            <p>
+              Linux System Administration,
+              Nginx,
+              Apache,
+              SSL Certificates
+              Debian
+            </p>
+
+            <h2>Tools</h2>
+            <p>
+              git,
+              ssh,
+              bash,
+              PHPStorm,
+              Visual Studio,
+              Gimp,
+              Kdenlive,
+              ObsStudio
+            </p>
+
+            <h2>Other</h2>
+            <p>
+              Juggling, Martial Arts, Historic Investigation
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h1>Projects</h1>
+
+          <div className="experience project">
+            <a className="logo" href="https://audiosource.io" target="_blank">
+              <img src={ASLogo} alt="Audio Source Logo" />
+            </a>
+            <div className="duration">2018 - 2021</div>
+            <h2 className="name">
+              <a className="logo" href="https://audiosource.io" target="_blank">
+                Audio Source Composer
+              </a>
+            </h2>
+            <div className="subname">Web-based Digital Audio Workstation</div>
+            <p className="description">
+              The Audio Source Composer is an Open-Source Digital Audio Workstation (DAW) built on the WebAudio API written in NodeJS with ReactJS for browsers and ReactNative for mobile.
+              The main goal of the AudioSource Project is to provide an easy <strong>all-platform music composer</strong> pre-loaded with as many free sample libraries we can compile,
+              allowing aficionados of all music to not only listen, but explore the 'source' of the music they love, and hopefully be inspired to write music of their own.
+            </p>
+            <a className="source-link" href="https://github.com/clevertree/audio-source-composer" target="_blank">
+              <AiFillGithub alt="Github.com" />
+            </a>
+          </div>
+
+          <div className="print-break" />
+
+          <div className="experience project">
+            <a className="logo" href="https://paradigmthreat.net/history/timeline" target="_blank">
+              <img src={PTLogo} alt="Paradigm Threat Logo" />
+            </a>
+            <div className="duration">2019 - 2021</div>
+            <h2 className="name">
+              <a className="logo" href="https://audiosource.io" target="_blank">
+                Alternate Cosmology Timeline
+              </a>
+            </h2>
+            <div className="subname">Investigation Repository Website</div>
+            <p className="description">
+              The objective of this timeline is to compile an alternate history of Earth based on <em>ancient testimony</em> as an accessible sequence of events from the first memory to modern day.
+              I'm hoping this project helps others navigate the dissonance of consensus, and be able to visualize the creation of our world and solar system.
+              My investigation repository has survived numerous
+              <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank"> DDoS attacks </a>
+              and hacking attempts by being written in ReactJS and having no database ;)
+            </p>
+            <a className="source-link" href="https://github.com/clevertree/paradigm-threat" target="_blank">
+              <AiFillGithub alt="Github.com" />
+            </a>
+          </div>
+
+
+          <div className="experience project">
+            <a className="logo" href="https://ffga.me" target="_blank">
+              <img src={FFLogo} alt="Forgotten Future Logo" />
+            </a>
+            <div className="duration">2008 - 2021</div>
+            <h2 className="name">
+              <a className="logo" href="https://ffga.me" target="_blank">
+                Forgotten Future
+              </a>
+            </h2>
+            <div className="subname">WebGL based video game</div>
+            <p className="description">
+              Forgotten Future is a web-based video game project still in the planning stages.
+              This open-source parallax scrolling game will be available on all platforms.
+              Right now the website features a <a href="https://ffga.me/demo.html" target="_blank">webGL demo</a> as well as
+              <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" target="_blank"> music </a>
+              composed by Ari Asulin.
+              The next phase of this project will involve finding a cross-platform GL solution
+              allowing video games to be written <em>once</em> and be playable <em>anywhere</em>.
+            </p>
+            <a className="source-link" href="https://github.com/clevertree/forgotten-future" target="_blank">
+              <AiFillGithub alt="Github.com" />
+            </a>
+          </div>
+
+        </section>
+      </div>
 
 
       <section>
@@ -286,6 +291,7 @@ class IndexPage extends PageTemplate {
           </div>
         </div>
 
+        <div className="print-break" />
 
         <div className="experience work">
           <div className="location">Scottsdale, Arizona</div>
