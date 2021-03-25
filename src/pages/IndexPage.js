@@ -5,8 +5,12 @@ import { SiGooglemessages } from 'react-icons/si';
 import { GrLocation } from 'react-icons/gr';
 import { MdEmail } from 'react-icons/md';
 import { CgWebsite} from 'react-icons/cg';
-import { AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlinePhone, AiFillGithub } from 'react-icons/ai';
 import ProfilePicture from "./assets/ari.jpg"
+
+import ASLogo from "./assets/images/as-logo192.png";
+import PTLogo from "./assets/images/pt-logo192.png";
+import FFLogo from "./assets/images/ff-logo192.png";
 
 import './assets/IndexPage.css';
 
@@ -114,9 +118,84 @@ class IndexPage extends PageTemplate {
 
           <h2>Other</h2>
           <p>
-            Juggling, Martial Arts, Investigation
+            Juggling, Martial Arts, Historic Investigation
           </p>
         </div>
+      </section>
+
+      <section>
+        <h1>Projects</h1>
+
+        <div className="experience project">
+          <a className="logo" href="https://audiosource.io" target="_blank">
+            <img src={ASLogo} alt="Audio Source Logo" />
+          </a>
+          <div className="duration">2018 - 2021</div>
+          <h2 className="name">
+            <a className="logo" href="https://audiosource.io" target="_blank">
+              Audio Source Composer
+            </a>
+          </h2>
+          <div className="subname">Web-based Digital Audio Workstation</div>
+          <p className="description">
+            The Audio Source Composer is an Open-Source Digital Audio Workstation (DAW) built on the WebAudio API written in NodeJS with ReactJS for browsers and ReactNative for mobile.
+            The main goal of the AudioSource Project is to provide an easy <strong>all-platform music composer</strong> pre-loaded with as many free sample libraries we can compile,
+            allowing aficionados of all music to not only listen, but explore the 'source' of the music they love, and hopefully be inspired to write music of their own.
+          </p>
+          <a className="source-link" href="https://github.com/clevertree/audio-source-composer" target="_blank">
+            <AiFillGithub alt="Github.com" />
+          </a>
+        </div>
+
+        <div className="experience project">
+          <a className="logo" href="https://paradigmthreat.net/history/timeline" target="_blank">
+            <img src={PTLogo} alt="Paradigm Threat Logo" />
+          </a>
+          <div className="duration">2019 - 2021</div>
+          <h2 className="name">
+            <a className="logo" href="https://audiosource.io" target="_blank">
+              Alternate Cosmology Timeline
+            </a>
+          </h2>
+          <div className="subname">Investigation Repository Website</div>
+          <p className="description">
+            The objective of this timeline is to compile an alternate history of Earth based on <em>ancient testimony</em> as an accessible sequence of events from the first memory to modern day.
+            I'm hoping this project helps others navigate the dissonance of consensus, and be able to visualize the creation of our world and solar system.
+            My investigation repository has survived numerous
+            <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank"> DDoS attacks </a>
+            and hacking attempts by being written in ReactJS and having no database ;)
+          </p>
+          <a className="source-link" href="https://github.com/clevertree/paradigm-threat" target="_blank">
+            <AiFillGithub alt="Github.com" />
+          </a>
+        </div>
+
+
+        <div className="experience project">
+          <a className="logo" href="https://ffga.me" target="_blank">
+            <img src={FFLogo} alt="Forgotten Future Logo" />
+          </a>
+          <div className="duration">2008 - 2021</div>
+          <h2 className="name">
+            <a className="logo" href="https://ffga.me" target="_blank">
+              Forgotten Future
+            </a>
+          </h2>
+          <div className="subname">WebGL based video game</div>
+          <p className="description">
+            Forgotten Future is a web-based video game project still in the planning stages.
+            This open-source parallax scrolling game will be available on all platforms.
+            Right now the website features a <a href="https://ffga.me/demo.html" target="_blank">webGL demo</a> as well as
+            <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" target="_blank"> music </a>
+            composed by Ari Asulin.
+            The next phase of this project will involve finding a cross-platform GL solution
+            allowing video games to be written <em>once</em> and be playable <em>anywhere</em>.
+          </p>
+          <a className="source-link" href="https://github.com/clevertree/forgotten-future" target="_blank">
+            <AiFillGithub alt="Github.com" />
+          </a>
+        </div>
+
       </section>
 
       <section>
@@ -162,7 +241,6 @@ class IndexPage extends PageTemplate {
           </p>
           <div className="contact">
             <a href="mailto:DavePeep@harkins.com"><MdEmail /></a>
-            <a href="tel:480 200-7231"><AiOutlinePhone /></a>
             Dave Peep (IT Manager)
           </div>
           <div className="contact">

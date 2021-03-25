@@ -87,3 +87,14 @@
   margin: 0.4em;
 }
 
+
+.experience > .logo {
+  float: right;
+  padding: 0 0 0 1em;
+}
+
+.experience > .source-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
