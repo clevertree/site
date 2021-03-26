@@ -25,7 +25,7 @@ ReactDOM.render(
 );
 
 
-console.log("Dev mode: ", process.env.NODE_ENV);
+console.log("NODE_ENV: ", process.env.NODE_ENV);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

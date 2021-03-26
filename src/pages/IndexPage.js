@@ -5,7 +5,7 @@ import { SiGooglemessages } from 'react-icons/si';
 import { GrLocation } from 'react-icons/gr';
 import { MdEmail } from 'react-icons/md';
 import { CgWebsite} from 'react-icons/cg';
-import { AiOutlinePhone, AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import ProfilePicture from "./assets/ari.jpg"
 
 import ASLogo from "./assets/images/as-logo192.png";
@@ -23,7 +23,7 @@ class IndexPage extends PageTemplate {
       <section>
         <h1>Ari Asulin - Software Engineer</h1>
         <div className="experience">
-          <img src={ProfilePicture} className="profile-picture"/>
+          <img src={ProfilePicture} className="profile-picture" alt="Profile"/>
           <div className="contact-info">
             <IoIosContact/>
             Ari Raphael Asulin
@@ -34,25 +34,25 @@ class IndexPage extends PageTemplate {
           </div>
           <div className="contact-info">
             <SiGooglemessages />
-            <a href="tel:602-492-7768" target="_blank">
+            <a href="tel:602-492-7768" {...remoteAttr}>
               602-492-7768
             </a>
           </div>
           <div className="contact-info">
             <MdEmail />
-            <a href="mailto:ari.asulin@gmail.com" target="_blank">
+            <a href="mailto:ari.asulin@gmail.com" {...remoteAttr}>
               ari.asulin@gmail.com
             </a>
           </div>
           <div className="contact-info">
             <CgWebsite />
-            <a href="https://github.com/clevertree" target="_blank">
+            <a href="https://github.com/clevertree" {...remoteAttr}>
               github.com/clevertree
             </a>
           </div>
           <div className="contact-info">
             <CgWebsite />
-            <a href="https://linkedin.com/in/ariasulin" target="_blank">
+            <a href="https://linkedin.com/in/ariasulin" {...remoteAttr}>
               linkedin.com/in/ariasulin
             </a>
           </div>
@@ -152,15 +152,15 @@ class IndexPage extends PageTemplate {
         </section>
 
         <section>
-          <h1>Projects</h1>
+          <h1>Personal  Projects</h1>
 
           <div className="experience project">
-            <a className="logo" href="https://audiosource.io" target="_blank">
+            <a className="logo" href="https://audiosource.io" {...remoteAttr}>
               <img src={ASLogo} alt="Audio Source Logo" />
             </a>
             <div className="duration">2018 - 2021</div>
             <h2 className="name">
-              <a className="logo" href="https://audiosource.io" target="_blank">
+              <a className="logo" href="https://audiosource.io" {...remoteAttr}>
                 Audio Source Composer
               </a>
             </h2>
@@ -170,7 +170,7 @@ class IndexPage extends PageTemplate {
               The main goal of the AudioSource Project is to provide an easy <strong>all-platform music composer</strong> pre-loaded with as many free sample libraries we can compile,
               allowing aficionados of all music to not only listen, but explore the 'source' of the music they love, and hopefully be inspired to write music of their own.
             </p>
-            <a className="source-link" href="https://github.com/clevertree/audio-source-composer" target="_blank">
+            <a className="source-link" href="https://github.com/clevertree/audio-source-composer" {...remoteAttr}>
               <AiFillGithub alt="Github.com" />
             </a>
           </div>
@@ -178,42 +178,42 @@ class IndexPage extends PageTemplate {
           <div className="print-break" />
 
           <div className="experience project">
-            <a className="logo" href="https://paradigmthreat.net/history/timeline" target="_blank">
+            <a className="logo" href="https://paradigmthreat.net/history/timeline" {...remoteAttr}>
               <img src={PTLogo} alt="Paradigm Threat Logo" />
             </a>
             <div className="duration">2019 - 2021</div>
             <h2 className="name">
-              <a className="logo" href="https://github.com/clevertree/paradigm-threat" target="_blank">
+              <a className="logo" href="https://github.com/clevertree/paradigm-threat" {...remoteAttr}>
                 Paradigm Threat CMS
               </a>
             </h2>
             <div className="subname">Investigation Repository</div>
             <p className="description">
               The Paradigm Threat CMS is written in ReactJS (NodeJS) making use of
-              <a href="https://www.markdownguide.org/" target="_blank"> Markdown </a>
+              <a href="https://www.markdownguide.org/" {...remoteAttr}> Markdown </a>
               syntax.
               All site content is managed through a shared git-repository
               which provides deployment, version control, and user access
               without needing a database service.
               This makes the CMS invulnerable to
-              <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank"> DDoS attacks </a>
+              <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" {...remoteAttr}> DDoS attacks </a>
               and hacking attempts.
               The objective of the timeline project is to compile an alternate history of Earth based on <em>ancient testimony</em> as an accessible sequence of events from the first memory to modern day.
               The CMS has been used to gather contributing documents for our team investigations.
             </p>
-            <a className="source-link" href="https://github.com/clevertree/paradigm-threat" target="_blank">
+            <a className="source-link" href="https://github.com/clevertree/paradigm-threat" {...remoteAttr}>
               <AiFillGithub alt="Github.com" />
             </a>
           </div>
 
 
           <div className="experience project">
-            <a className="logo" href="https://ffga.me" target="_blank">
+            <a className="logo" href="https://ffga.me" {...remoteAttr}>
               <img src={FFLogo} alt="Forgotten Future Logo" />
             </a>
             <div className="duration">2008 - 2021</div>
             <h2 className="name">
-              <a className="logo" href="https://ffga.me" target="_blank">
+              <a className="logo" href="https://ffga.me" {...remoteAttr}>
                 Forgotten Future
               </a>
             </h2>
@@ -221,13 +221,13 @@ class IndexPage extends PageTemplate {
             <p className="description">
               Forgotten Future is a web-based video game project still in the planning stages.
               This open-source parallax scrolling game will be available on all platforms.
-              Right now the website features a <a href="https://ffga.me/demo.html" target="_blank">webGL demo</a> as well as
-              <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" target="_blank"> music </a>
+              Right now the website features a <a href="https://ffga.me/demo.html" {...remoteAttr}>webGL demo</a> as well as
+              <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" {...remoteAttr}> music </a>
               composed by Ari Asulin.
               The next phase of this project will involve finding a cross-platform GL solution
               allowing video games to be written <em>once</em> and be playable <em>anywhere</em>.
             </p>
-            <a className="source-link" href="https://github.com/clevertree/forgotten-future" target="_blank">
+            <a className="source-link" href="https://github.com/clevertree/forgotten-future" {...remoteAttr}>
               <AiFillGithub alt="Github.com" />
             </a>
           </div>
@@ -253,11 +253,11 @@ class IndexPage extends PageTemplate {
             NodeJS (npm) ecosystem.
           </p>
           <div className="contact">
-            <a href="mailto:DavePeep@harkins.com"><MdEmail /></a>
+            <a href="mailto:DavePeep@harkins.com" {...remoteAttr}><MdEmail /></a>
             Dave Peep (IT Manager)
           </div>
           <div className="contact">
-            <a href="mailto:AronBarr@harkins.com"><MdEmail /></a>
+            <a href="mailto:AronBarr@harkins.com" {...remoteAttr}><MdEmail /></a>
             Aron Barr (Hiring Manager)
           </div>
         </div>
@@ -274,7 +274,7 @@ class IndexPage extends PageTemplate {
           </p>
 
           <div className="contact">
-            <a href="mailto:tony@simonpayments.com"><MdEmail /></a>
+            <a href="mailto:tony@simonpayments.com" {...remoteAttr}><MdEmail /></a>
             Tony Garay
           </div>
         </div>
@@ -290,11 +290,11 @@ class IndexPage extends PageTemplate {
             I then joined NewAer for the next 6 months and left after the company scaled down - they had realized Windows RT couldn't do bluetooth networking.
           </p>
           <div className="contact">
-            <a href="mailto:rob.mallery@originate.com"><MdEmail /></a>
+            <a href="mailto:rob.mallery@originate.com" {...remoteAttr}><MdEmail /></a>
             Rob Mallery
           </div>
           <div className="contact">
-            <a href="mailto:dave@newaer.com"><MdEmail /></a>
+            <a href="mailto:dave@newaer.com" {...remoteAttr}><MdEmail /></a>
             Dave Matthews
           </div>
         </div>
@@ -311,7 +311,7 @@ class IndexPage extends PageTemplate {
             I was hired for my experience integrating APIs in PHP.
           </p>
           <div className="contact">
-            <a href="mailto:eric@blueglobalmedia.com"><MdEmail /></a>
+            <a href="mailto:eric@blueglobalmedia.com" {...remoteAttr}><MdEmail /></a>
             Eric Cumberworth
           </div>
         </div>
@@ -324,8 +324,7 @@ class IndexPage extends PageTemplate {
           <div className="position">Head Of Information Technology</div>
           <div className="description">
             I was head of IT for Etelegate - a payment processor of high-risk websites.
-            While attending ASU (which had a poor compsci degree),
-            I learned a great deal of industry-standard languages like PHP and Javascript on the job.
+            I learned a great deal of industry-standard languages like PHP and Javascript on the job while also attending ASU.
             My responsibilities eventually included:
             <ul>
               <li>Lead Developer, Project Manager, Content & Design Management</li>
@@ -337,7 +336,7 @@ class IndexPage extends PageTemplate {
             </ul>
           </div>
           <div className="contact">
-            <a href="mailto:Gppardy@etelegate.com"><MdEmail /></a>
+            <a href="mailto:Gppardy@etelegate.com" {...remoteAttr}><MdEmail /></a>
             Gordon Pardy
           </div>
         </div>
@@ -349,3 +348,9 @@ class IndexPage extends PageTemplate {
 }
 
 export default IndexPage;
+
+
+const remoteAttr = {
+  target:   '_blank',
+  rel:      'noreferer',
+}
