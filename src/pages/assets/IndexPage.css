@@ -95,7 +95,7 @@
 }
 
 .experience > .logo > img {
-  max-width: 8vh;
+  /*max-width: 8vh;*/
 }
 
 .experience > .source-link {
@@ -106,6 +106,6 @@
 
 @media only screen and (max-width: 1200px) {
   .experience > .logo > img {
-    max-width: 10vw;
+    /*max-width: 32vw;*/
   }
 }

@@ -91,17 +91,16 @@ class IndexPage extends PageTemplate {
           <div className="experience skills">
             <h2>Programming</h2>
             <p>
-              React Native,
+              <strong>JavaScript</strong>,
+              TypeScript,
               ReactJS,
-              HTML5,
-              CSS3,
-              SQL,
+              React Native,
+              HTML5 && CSS3,
+              PHP,
+              .NET & C#,
+              SQL & NoSQL,
               Android Development,
               iOS Development,
-              Javascript & jQuery,
-              PHP,
-              C#,
-              .NET,
               Continuous Integration,
               Encryption,
               Application Programming Interfaces,
@@ -110,7 +109,7 @@ class IndexPage extends PageTemplate {
 
             <h2>Stack</h2>
             <p>
-              NodeJS (Server) + React* (Client),
+              <strong>NodeJS (Server) + React* (Client),</strong>
               LAMP (or nginx)
             </p>
 
@@ -119,16 +118,17 @@ class IndexPage extends PageTemplate {
               Video Editing,
               Image Creation,
               Music Production,
-              HTML & CSS Content
+              HTML & CSS Content,
+              Broadcasting
             </p>
 
             <h2>Administration</h2>
             <p>
               Linux System Administration,
+              Debian Server,
               Nginx,
               Apache,
               SSL Certificates
-              Debian
             </p>
 
             <h2>Tools</h2>
@@ -136,6 +136,7 @@ class IndexPage extends PageTemplate {
               git,
               ssh,
               bash,
+              nodejs & npm,
               PHPStorm,
               Visual Studio,
               Gimp,
@@ -182,17 +183,23 @@ class IndexPage extends PageTemplate {
             </a>
             <div className="duration">2019 - 2021</div>
             <h2 className="name">
-              <a className="logo" href="https://audiosource.io" target="_blank">
-                Alternate Cosmology Timeline
+              <a className="logo" href="https://github.com/clevertree/paradigm-threat" target="_blank">
+                Paradigm Threat CMS
               </a>
             </h2>
-            <div className="subname">Investigation Repository Website</div>
+            <div className="subname">Investigation Repository</div>
             <p className="description">
-              The objective of this timeline is to compile an alternate history of Earth based on <em>ancient testimony</em> as an accessible sequence of events from the first memory to modern day.
-              I'm hoping this project helps others navigate the dissonance of consensus, and be able to visualize the creation of our world and solar system.
-              My investigation repository has survived numerous
+              The Paradigm Threat CMS is written in ReactJS (NodeJS) making use of
+              <a href="https://www.markdownguide.org/" target="_blank"> Markdown </a>
+              syntax.
+              All site content is managed through a shared git-repository
+              which provides deployment, version control, and user access
+              without needing a database service.
+              This makes the CMS invulnerable to
               <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank"> DDoS attacks </a>
-              and hacking attempts by being written in ReactJS and having no database ;)
+              and hacking attempts.
+              The objective of the timeline project is to compile an alternate history of Earth based on <em>ancient testimony</em> as an accessible sequence of events from the first memory to modern day.
+              The CMS has been used to gather contributing documents for our team investigations.
             </p>
             <a className="source-link" href="https://github.com/clevertree/paradigm-threat" target="_blank">
               <AiFillGithub alt="Github.com" />
@@ -242,7 +249,8 @@ class IndexPage extends PageTemplate {
             I helped them keep their software humming through hacker attacks, power outages, and all the rest.
             After the theatres closed due to the plandemic, my hours were reduced.
             As things aren't getting back to normal, I'm looking for new work.
-            It was an amazing experience with amazing people ;D
+            It was an amazing experience with amazing people and I got to delve heavily into the
+            NodeJS (npm) ecosystem.
           </p>
           <div className="contact">
             <a href="mailto:DavePeep@harkins.com"><MdEmail /></a>
@@ -261,7 +269,7 @@ class IndexPage extends PageTemplate {
           <div className="position">Software Contractor</div>
           <p className="description">
             I rescued an East Coast payment processor who lost their programmer. I was able to fix their bank integration.
-            Then I redesigned their entire payment processor in PHP.
+            Then I redesigned their entire payment processor in PHP, including a front-end UI that generated forms on the fly.
             I integrated a few more bank APIs for Simon Payments and then eventually they let me go as the software was humming along beautifully.
           </p>
 
@@ -278,8 +286,8 @@ class IndexPage extends PageTemplate {
           <div className="position">Originator and Software Engineer</div>
           <p className="description">
             I was an Originator for the Originate and NewAer software companies in San Francisco which operated out of the same offices.
-            I was tasked with building Apps for Android, iOS, WinRT, Windows 8 desktop, as well as proximity­-based social networking.
-            I then joined NewAer for the next 6 months and left after they realized Windows RT can't do bluetooth networking.
+            I was tasked with building Apps for Android, iOS, WinRT, Windows 8 desktop, as well as investigating proximity-based social networking.
+            I then joined NewAer for the next 6 months and left after the company scaled down - they had realized Windows RT couldn't do bluetooth networking.
           </p>
           <div className="contact">
             <a href="mailto:rob.mallery@originate.com"><MdEmail /></a>
@@ -299,7 +307,8 @@ class IndexPage extends PageTemplate {
           <h2 className="company">Blue Global Media</h2>
           <div className="position">Integration Specialist, and System Administrator</div>
           <p className="description">
-            I built APIs for lender applications and financial reporting as well as maintained linux servers.
+            I integrated bank APIs for home and auto lender applications as well as maintained linux servers.
+            I was hired for my experience integrating APIs in PHP.
           </p>
           <div className="contact">
             <a href="mailto:eric@blueglobalmedia.com"><MdEmail /></a>
@@ -315,6 +324,9 @@ class IndexPage extends PageTemplate {
           <div className="position">Head Of Information Technology</div>
           <div className="description">
             I was head of IT for Etelegate - a payment processor of high-risk websites.
+            While attending ASU (which had a poor compsci degree),
+            I learned a great deal of industry-standard languages like PHP and Javascript on the job.
+            My responsibilities eventually included:
             <ul>
               <li>Lead Developer, Project Manager, Content & Design Management</li>
               <li>Developed and maintained website over a 6 year period</li>
