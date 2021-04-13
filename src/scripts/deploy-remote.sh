@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-echo "sh deploy.sh" | ssh paradigmthreat.net;
+echo "sh deploy-clevertree.sh" | ssh clevertree.net;

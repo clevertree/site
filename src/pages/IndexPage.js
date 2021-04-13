@@ -56,6 +56,14 @@ class IndexPage extends PageTemplate {
               linkedin.com/in/ariasulin
             </a>
           </div>
+          <br/>
+          <p>
+            I'm a full-stack developer with 15 years of industrial experience.
+            I consider programming to be a form of art requiring an artistic mind.
+            I work well with teams and just as well autonomously.
+            My ambitions include designing an open-source Digital Audio Workstation (DAW)
+            and a series of video games,
+          </p>
         </div>
       </section>
 
@@ -68,8 +76,8 @@ class IndexPage extends PageTemplate {
           <h2 className="school">Arizona State University</h2>
           <div className="degree">B.S. in Computer Science</div>
           <p className="description">
+            ASU's Comp Sci degree heavily focused on project team management and .NET.
             I taught martial arts at the Rec Center for over 3 years.
-            Not the best school for learning programming or anything serious.
           </p>
         </div>
 
@@ -79,13 +87,12 @@ class IndexPage extends PageTemplate {
           <h2 className="school">University of Arizona</h2>
           <div className="degree">B.S. in Computer Science</div>
           <p className="description">
-            Nicer school than ASU with better programming courses.
+            UofA was a nicer college than ASU with better programming courses.
           </p>
         </div>
       </section>
 
       <div className="section-container">
-
         <section>
           <h1>Skills and Technologies</h1>
           <div className="experience skills">
@@ -244,21 +251,26 @@ class IndexPage extends PageTemplate {
           <h2 className="company">Harkins Theatres</h2>
           <div className="position">Software Contractor</div>
           <p className="description">
-            I was hired via odesk.com to maintain the Harkins.com website and application in PHP and ReactNative,
-            which were languages the IT team had limited practice with.
-            I helped them keep their software humming through hacker attacks, power outages, and all the rest.
-            After the theatres closed due to the plandemic, my hours were reduced.
-            As things aren't getting back to normal, I'm looking for new work.
+            I was hired to develop the Harkins.com website and store apps.
             It was an amazing experience with amazing people and I got to delve heavily into the
-            NodeJS (npm) ecosystem.
+            NodeJS (npm), Android, and iOS ecosystems.
+            My responsibilities included:
+            <ul>
+              <li>Implementing new website features using PHP, MySQL, jQuery, and REST</li>
+              <li>Migrating from Windows to LAMP</li>
+              <li>Maintaining uptime during crashes,  attacks</li>
+              <li>Implementing new app features using React Native and REST</li>
+              <li>Resolving CI compilation issues related to npm libraries</li>
+              <li>Deploying to the Play and Apple stores</li>
+            </ul>
           </p>
           <div className="contact">
             <a href="mailto:DavePeep@harkins.com" {...remoteAttr}><MdEmail /></a>
             Dave Peep (IT Manager)
           </div>
           <div className="contact">
-            <a href="mailto:AronBarr@harkins.com" {...remoteAttr}><MdEmail /></a>
-            Aron Barr (Hiring Manager)
+            <a href="mailto:DirkEllsworth@harkins.com" {...remoteAttr}><MdEmail /></a>
+            Dirk Ellsworth
           </div>
         </div>
 
@@ -271,6 +283,13 @@ class IndexPage extends PageTemplate {
             I rescued an East Coast payment processor who lost their programmer. I was able to fix their bank integration.
             Then I redesigned their entire payment processor in PHP, including a front-end UI that generated forms on the fly.
             I integrated a few more bank APIs for Simon Payments and then eventually they let me go as the software was humming along beautifully.
+            My responsibilities eventually included:
+            <ul>
+              <li>Lead Developer, Project Manager, Content & Design Management</li>
+              <li>Developed and maintained website over a 6 year period</li>
+              <li>Developed all modules including payment, payout, & financial systems</li>
+              <li>Maintained payment info storage, encryption, scheduling, and automation</li>
+            </ul>
           </p>
 
           <div className="contact">
@@ -331,8 +350,7 @@ class IndexPage extends PageTemplate {
               <li>Developed and maintained website over a 6 year period</li>
               <li>Developed all modules including payment, payout, & financial systems</li>
               <li>Maintained payment info storage, encryption, scheduling, and automation</li>
-              <li>Direct integration with world banking, as well as thousands of websites for
-                customer password storage and real time data management</li>
+              <li>API integration for processing bank transactions, as well as htpasswd password management for client websites</li>
             </ul>
           </div>
           <div className="contact">
