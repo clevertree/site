@@ -61,8 +61,12 @@ class IndexPage extends PageTemplate {
             I'm a full-stack developer with 15 years of industrial experience.
             I consider programming to be a form of art requiring an artistic mind.
             I work well with teams and just as well autonomously.
-            My ambitions include designing an open-source Digital Audio Workstation (DAW)
-            and a series of video games,
+
+            My ambitions include designing an open-source
+            <a className="logo" href="https://audiosource.io" {...remoteAttr}> Digital Audio Workstation (DAW) </a>
+            and a series of video games.
+            I refuse to work for any public (i.e. trades on NYSE), or international corporations.
+            <strong> American-owned only!</strong>
           </p>
         </div>
       </section>
