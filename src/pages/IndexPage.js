@@ -11,6 +11,7 @@ import ProfilePicture from "./assets/ari.jpg"
 import ASLogo from "./assets/images/as-logo192.png";
 import PTLogo from "./assets/images/pt-logo192.png";
 import FFLogo from "./assets/images/ff-logo192.png";
+import RSNLogo from "./assets/images/rsn-logo192.png";
 
 import './assets/IndexPage.css';
 
@@ -61,12 +62,15 @@ class IndexPage extends PageTemplate {
             I'm a full-stack developer with 15 years of industrial experience.
             I consider programming to be a form of art requiring an artistic mind.
             I work well with teams and just as well autonomously.
+            I am a US citizen born in Texas.
+
+            I would like to work long-term in an American-owned, low stress, high responsibility job.
+            I would prefer not to work for any public (i.e. trades on NYSE), or international corporations.
+            <em> American-owned companies only, please. </em>
 
             My ambitions include designing an open-source
             <a className="logo" href="https://audiosource.io" {...remoteAttr}> Digital Audio Workstation (DAW) </a>
             and a series of video games.
-            I refuse to work for any public (i.e. trades on NYSE), or international corporations.
-            <strong> American-owned only!</strong>
           </p>
         </div>
       </section>
@@ -188,6 +192,32 @@ class IndexPage extends PageTemplate {
 
           <div className="print-break" />
 
+
+          <div className="experience project">
+            <a className="logo" href="https://ffga.me" {...remoteAttr}>
+              <img src={FFLogo} alt="Forgotten Future Logo" />
+            </a>
+            <div className="duration">2008 - 2021</div>
+            <h2 className="name">
+              <a className="logo" href="https://ffga.me" {...remoteAttr}>
+                Forgotten Future
+              </a>
+            </h2>
+            <div className="subname">WebGL based video game</div>
+            <p className="description">
+              Forgotten Future is a web-based video game project still in the planning stages.
+              This open-source parallax scrolling game will be available on all platforms.
+              Right now the website features a <a href="https://ffga.me/demo.html" {...remoteAttr}>webGL demo</a> as well as
+              <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" {...remoteAttr}> music </a>
+              composed by Ari Asulin.
+              The next phase of this project will involve finding a cross-platform GL solution
+              allowing video games to be written <em>once</em> and be playable <em>anywhere</em>.
+            </p>
+            <a className="source-link" href="https://github.com/clevertree/forgotten-future" {...remoteAttr}>
+              <AiFillGithub alt="Github.com" />
+            </a>
+          </div>
+
           <div className="experience project">
             <a className="logo" href="https://paradigmthreat.net/history/timeline" {...remoteAttr}>
               <img src={PTLogo} alt="Paradigm Threat Logo" />
@@ -217,28 +247,23 @@ class IndexPage extends PageTemplate {
             </a>
           </div>
 
-
           <div className="experience project">
-            <a className="logo" href="https://ffga.me" {...remoteAttr}>
-              <img src={FFLogo} alt="Forgotten Future Logo" />
+            <a className="logo" href="https://github.com/clevertree/relay" {...remoteAttr}>
+              <img src={RSNLogo} alt="Relay Logo" />
             </a>
-            <div className="duration">2008 - 2021</div>
+            <div className="duration">2015 - 2016</div>
             <h2 className="name">
-              <a className="logo" href="https://ffga.me" {...remoteAttr}>
-                Forgotten Future
+              <a className="logo" href="https://github.com/clevertree/relay" {...remoteAttr}>
+                Relay
               </a>
             </h2>
-            <div className="subname">WebGL based video game</div>
+            <div className="subname">Blockchain Social Network</div>
             <p className="description">
-              Forgotten Future is a web-based video game project still in the planning stages.
-              This open-source parallax scrolling game will be available on all platforms.
-              Right now the website features a <a href="https://ffga.me/demo.html" {...remoteAttr}>webGL demo</a> as well as
-              <a href="https://soundcloud.com/ari-asulin/forgotten-future-desolation-title-theme" {...remoteAttr}> music </a>
-              composed by Ari Asulin.
-              The next phase of this project will involve finding a cross-platform GL solution
-              allowing video games to be written <em>once</em> and be playable <em>anywhere</em>.
+              Relay is a social network powered by blockchain technology. Utilizing PGP Encryption & WebRTC technology,
+              and driven by Community Source principles, Relay offers a public alternative to the many emerging social
+              media challenges and an increasingly disconnected user-experience. The project was discontinued after we couldn’t secure funding.
             </p>
-            <a className="source-link" href="https://github.com/clevertree/forgotten-future" {...remoteAttr}>
+            <a className="source-link" href="https://github.com/clevertree/relay" {...remoteAttr}>
               <AiFillGithub alt="Github.com" />
             </a>
           </div>
